@@ -54,6 +54,11 @@ user = user_input_features()
 st.subheader('User Input parameters')
 st.write(user)
 
+accuracy = model.score(X_test,Y_test)
+
+st.subheader('Model Accuracy Score')
+st.write(accuracy)
+
 prediction = model.predict(user)
 
 st.subheader('Prediction')
