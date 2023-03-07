@@ -39,9 +39,9 @@ This app predicts the **Sales Performance** for different advertisement types!
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
-    TV = st.sidebar.slider('TV', 0.7, 296.4, 10)
-    Radio = st.sidebar.slider('Radio', 0, 49.6, 10)
-    Newspaper = st.sidebar.slider('Newspaper', 0.3, 114.0, 10)
+    TV = st.sidebar.slider('TV', 0, 300, 10)
+    Radio = st.sidebar.slider('Radio', 0, 300, 10)
+    Newspaper = st.sidebar.slider('Newspaper', 0, 300, 10)
     
     data = {'TV': TV,
             'Radio': Radio,
